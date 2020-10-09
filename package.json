@@ -1,0 +1,32 @@
+{
+  "name": "egeria-api-mocks",
+  "version": "0.0.0",
+  "description": "Egeria API Mocks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "start:dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egeria/egeria-api-mocks.git"
+  },
+  "keywords": [
+    "egeria",
+    "api",
+    "mocks"
+  ],
+  "author": "Egeria Contributors",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/egeria/egeria-api-mocks/issues"
+  },
+  "homepage": "https://github.com/egeria/egeria-api-mocks#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
