@@ -9,7 +9,9 @@ module.exports = function(app) {
   });
 
   app.get('/api/css/theme', (req, res) => {
-    res.redirect('/api/themes/orange/css/style.css');
+    let theme = 'default';
+
+    res.redirect(`/api/themes/${theme}/css/style.css`);
   });
 
   app.get('/api/src/app/info', (req, res) => {
