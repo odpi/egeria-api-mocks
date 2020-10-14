@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "username": "admin",
+  "name": "Administrator",
+  "avatarUrl": "/resources/img/admin.png",
+  "roles": [
+    "ADMIN"
+  ]
+}

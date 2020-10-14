@@ -1,0 +1,512 @@
+[
+  {
+    "name":"GlossaryTerm",
+    "description":"A semantic description of something, such as a concept, object, asset, technology, role or group.",
+    "version":1,
+    "superType":"Referenceable"
+  },
+  {
+    "name":"ControlledGlossaryTerm",
+    "description":"Defines a glossary term that is developed through a controlled workflow.",
+    "version":1,
+    "superType":"GlossaryTerm"
+  },
+  {
+    "name":"Asset",
+    "description":"The description of an asset that needs to be catalogued and governed.",
+    "version":1,
+    "superType":"Referenceable"
+  },
+  {
+    "name":"DataSet",
+    "description":"Collection of related data.",
+    "version":1,
+    "superType":"Asset"
+  },
+  {
+    "name":"DataStore",
+    "description":"A physical store of data.",
+    "version":1,
+    "superType":"Asset"
+  },
+  {
+    "name":"Infrastructure",
+    "description":"Physical infrastructure or software platform.",
+    "version":1,
+    "superType":"Asset"
+  },
+  {
+    "name":"Process",
+    "description":"Well-defined sequence of activities performed by people or software components.",
+    "version":1,
+    "superType":"Asset"
+  },
+  {
+    "name":"DeployedAPI",
+    "description":"A callable interface running at an endpoint.",
+    "version":1,
+    "superType":"Asset"
+  },
+  {
+    "name":"DesignModel",
+    "description":"A curated collection of design model elements.",
+    "version":1,
+    "superType":"Asset"
+  },
+  {
+    "name":"ReferenceCodeMappingTable",
+    "description":"A data set containing mappings between code values from different data sets.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"Form",
+    "description":"A collection of data items used to request activity.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"KeyStoreCollection",
+    "description":"A data set containing authentication and related security information.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"ReferenceCodeTable",
+    "description":"A data set containing code values and their translations.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"MediaCollection",
+    "description":"A group of related media files.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"Topic",
+    "description":"A location for storing and distributing related events.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"DeployedReport",
+    "description":"A collection if data items that describe a situation.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"MetadataCollection",
+    "description":"A data set containing metadata.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"DeployedDatabaseSchema",
+    "description":"A collection of database tables and views running in a database server.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"InformationView",
+    "description":"A data set containing selected data items from one or more data stores or data sets.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"SubscriberList",
+    "description":"A data set containing a list of endpoints registered to receive events from a topic.",
+    "version":1,
+    "superType":"DataSet"
+  },
+  {
+    "name":"DocumentStore",
+    "description":"Identifies a data store as one that contains documents.",
+    "version":1,
+    "superType":"DataStore"
+  },
+  {
+    "name":"DataFile",
+    "description":"A description of a file containing data stored in a file system.",
+    "version":1,
+    "superType":"DataStore"
+  },
+  {
+    "name":"MetadataRepository",
+    "description":"A data store containing metadata.",
+    "version":1,
+    "superType":"DataStore"
+  },
+  {
+    "name":"GraphStore",
+    "description":"Identifies a data store as one that contains one or more graphs.",
+    "version":1,
+    "superType":"DataStore"
+  },
+  {
+    "name":"CohortRegistryStore",
+    "description":"A data store containing cohort membership registration details.",
+    "version":1,
+    "superType":"DataStore"
+  },
+  {
+    "name":"FileFolder",
+    "description":"A description of a folder (directory) in a file system.",
+    "version":1,
+    "superType":"DataStore"
+  },
+  {
+    "name":"Database",
+    "description":"A data store containing relational data.",
+    "version":1,
+    "superType":"DataStore"
+  },
+  {
+    "name":"KeystoreFile",
+    "description":"An encrypted data store containing authentication and related security information.",
+    "version":1,
+    "superType":"DataFile"
+  },
+  {
+    "name":"MediaFile",
+    "description":"A data file containing unstructured data.",
+    "version":1,
+    "superType":"DataFile"
+  },
+  {
+    "name":"LogFile",
+    "description":"Identifies a data file as one containing log records.",
+    "version":1,
+    "superType":"DataFile"
+  },
+  {
+    "name":"CSVFile",
+    "description":"A description of a comma separated value (CSV) file",
+    "version":1,
+    "superType":"DataFile"
+  },
+  {
+    "name":"JSONFile",
+    "description":"A description of a file that follows the JavaScript Object Notation specification.",
+    "version":1,
+    "superType":"DataFile"
+  },
+  {
+    "name":"AvroFile",
+    "description":"A description of a file that follows the Apache Avro specification.",
+    "version":1,
+    "superType":"DataFile"
+  },
+  {
+    "name":"Document",
+    "description":"A data file containing unstructured text.",
+    "version":1,
+    "superType":"MediaFile"
+  },
+  {
+    "name":"DataFolder",
+    "description":"A folder (directory) in a file system that contains a collection of data.",
+    "version":1,
+    "superType":"FileFolder"
+  },
+  {
+    "name":"ITInfrastructure",
+    "description":"Hardware and base software that supports an IT system.",
+    "version":1,
+    "superType":"Infrastructure"
+  },
+  {
+    "name":"SoftwareServer",
+    "description":"Software services to support a runtime environment for applications and data stores.",
+    "version":1,
+    "superType":"ITInfrastructure"
+  },
+  {
+    "name":"Host",
+    "description":"Named IT infrastructure system that supports multiple software servers.",
+    "version":1,
+    "superType":"ITInfrastructure"
+  },
+  {
+    "name":"SoftwareServerPlatform",
+    "description":"Software services to support a runtime environment for a software server.",
+    "version":1,
+    "superType":"ITInfrastructure"
+  },
+  {
+    "name":"Network",
+    "description":"Inter-connectivity for systems.",
+    "version":1,
+    "superType":"ITInfrastructure"
+  },
+  {
+    "name":"HostCluster",
+    "description":"A group of hosts operating together to provide a scalable platform.",
+    "version":1,
+    "superType":"Host"
+  },
+  {
+    "name":"VirtualContainer",
+    "description":"Container-based virtual host.",
+    "version":1,
+    "superType":"Host"
+  },
+  {
+    "name":"DeployedSoftwareComponent",
+    "description":"A packaged and deployed software component supporting a well-defined function.",
+    "version":1,
+    "superType":"Process"
+  },
+  {
+    "name":"OpenDiscoveryService",
+    "description":"A pluggable component for discovering properties about an asset.",
+    "version":1,
+    "superType":"DeployedSoftwareComponent"
+  },
+  {
+    "name":"OpenDiscoveryPipeline",
+    "description":"A pluggable component that calls multiple discovery services.",
+    "version":1,
+    "superType":"OpenDiscoveryService"
+  },
+  {
+    "name":"SchemaElement",
+    "description":"An element that is part of a schema definition.",
+    "version":3,
+    "superType":"Referenceable"
+  },
+  {
+    "name":"SchemaType",
+    "description":"A specific type description.",
+    "version":1,
+    "superType":"SchemaElement"
+  },
+  {
+    "name":"SchemaAttribute",
+    "description":"A schema element that nests another schema type in its parent.",
+    "version":2,
+    "superType":"SchemaElement"
+  },
+  {
+    "name":"SchemaLinkElement",
+    "description":"A link to a type in a different schema.",
+    "version":1,
+    "superType":"SchemaElement"
+  },
+  {
+    "name":"SimpleSchemaType",
+    "description":"A single valued type.",
+    "version":1,
+    "superType":"SchemaType"
+  },
+  {
+    "name":"ComplexSchemaType",
+    "description":"A schema type that has a complex structure of nested attributes and types.",
+    "version":1,
+    "superType":"SchemaType"
+  },
+  {
+    "name":"MapSchemaType",
+    "description":"A schema type for a map between a key and value.",
+    "version":1,
+    "superType":"SchemaType"
+  },
+  {
+    "name":"APISchemaType",
+    "description":"Description of an API.",
+    "version":1,
+    "superType":"SchemaType"
+  },
+  {
+    "name":"LiteralSchemaType",
+    "description":"A fixed simple value.",
+    "version":1,
+    "superType":"SchemaType"
+  },
+  {
+    "name":"SchemaTypeChoice",
+    "description":"A list of alternative schema types for attribute.",
+    "version":1,
+    "superType":"SchemaType"
+  },
+  {
+    "name":"APIOperation",
+    "description":"Description of an API operation.",
+    "version":1,
+    "superType":"SchemaType"
+  },
+  {
+    "name":"PrimitiveSchemaType",
+    "description":"A specific primitive type.",
+    "version":1,
+    "superType":"SimpleSchemaType"
+  },
+  {
+    "name":"EnumSchemaType",
+    "description":"A single valued type with fixed list of valid values.",
+    "version":1,
+    "superType":"SimpleSchemaType"
+  },
+  {
+    "name":"TabularColumnType",
+    "description":"A schema type for a column oriented data structure.",
+    "version":1,
+    "superType":"PrimitiveSchemaType"
+  },
+  {
+    "name":"SimpleDocumentType",
+    "description":"A primitive attribute for a hierarchical data structure.",
+    "version":1,
+    "superType":"PrimitiveSchemaType"
+  },
+  {
+    "name":"RelationalColumnType",
+    "description":"A type for a relational column.",
+    "version":1,
+    "superType":"TabularColumnType"
+  },
+  {
+    "name":"DocumentSchemaType",
+    "description":"A schema type for a hierarchical data structure.",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"BoundedSchemaType",
+    "description":"A schema type that limits the number of values that can be stored.",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"EventType",
+    "description":"A description of an event (message)",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"TabularSchemaType",
+    "description":"A schema type for a table oriented data structure.",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"RelationalDBSchemaType",
+    "description":"A schema type for a relational database.",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"GraphSchemaType",
+    "description":"A schema type for a graph data structure.",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"StructSchemaType",
+    "description":"A schema type that has a list of attributes, typically of different types.",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"ObjectSchemaType",
+    "description":"A schema attribute for an object.",
+    "version":1,
+    "superType":"ComplexSchemaType"
+  },
+  {
+    "name":"ArraySchemaType",
+    "description":"A schema type that has a list of values of the same type.",
+    "version":1,
+    "superType":"BoundedSchemaType"
+  },
+  {
+    "name":"SetSchemaType",
+    "description":"A schema type that is an unordered group of values of the same type.",
+    "version":1,
+    "superType":"BoundedSchemaType"
+  },
+  {
+    "name":"ArrayDocumentType",
+    "description":"An array in a hierarchical data structure.",
+    "version":1,
+    "superType":"ArraySchemaType"
+  },
+  {
+    "name":"SetDocumentType",
+    "description":"A set in a hierarchical data structure.",
+    "version":1,
+    "superType":"SetSchemaType"
+  },
+  {
+    "name":"RelationalTableType",
+    "description":"A table type for a relational database.",
+    "version":1,
+    "superType":"TabularSchemaType"
+  },
+  {
+    "name":"StructDocumentType",
+    "description":"A structure within a hierarchical data structure.",
+    "version":1,
+    "superType":"StructSchemaType"
+  },
+  {
+    "name":"MapDocumentType",
+    "description":"A map in a hierarchical data structure.",
+    "version":1,
+    "superType":"MapSchemaType"
+  },
+  {
+    "name":"RelationalTable",
+    "description":"A table within a relational database schema type.",
+    "version":1,
+    "superType":"SchemaAttribute"
+  },
+  {
+    "name":"DerivedSchemaAttribute",
+    "description":"An attribute that is made up of values from another attribute.",
+    "version":2,
+    "superType":"SchemaAttribute"
+  },
+  {
+    "name":"DocumentSchemaAttribute",
+    "description":"A schema attribute for a hierarchical data structure.",
+    "version":1,
+    "superType":"SchemaAttribute"
+  },
+  {
+    "name":"TabularColumn",
+    "description":"A column attribute for a table oriented data structure.",
+    "version":1,
+    "superType":"SchemaAttribute"
+  },
+  {
+    "name":"GraphEdge",
+    "description":"A schema attribute for a graph data structure.",
+    "version":1,
+    "superType":"SchemaAttribute"
+  },
+  {
+    "name":"GraphVertex",
+    "description":"A schema attribute for a graph data structure.",
+    "version":1,
+    "superType":"SchemaAttribute"
+  },
+  {
+    "name":"ObjectAttribute",
+    "description":"An attribute in an object schema type.",
+    "version":1,
+    "superType":"SchemaAttribute"
+  },
+  {
+    "name":"DerivedRelationalColumn",
+    "description":"A relational column that is derived from other columns.",
+    "version":1,
+    "superType":"DerivedSchemaAttribute"
+  },
+  {
+    "name":"RelationalColumn",
+    "description":"A column within a relational table.",
+    "version":2,
+    "superType":"TabularColumn"
+  }
+]
