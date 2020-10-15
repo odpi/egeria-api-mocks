@@ -1,0 +1,7 @@
+{
+  "version":"2.3-SNAPSHOT",
+  "time":"2020-09-25T12:37:26.473Z",
+  "name":"UI Server Platform Chassis for Spring",
+  "group":"org.odpi.egeria",
+  "artifact":"ui-chassis-spring"
+}
