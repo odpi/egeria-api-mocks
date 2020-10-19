@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "id": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8l9.koitp6g.85g5rm.tghfdbgi2ggf1cigmp7ji",
+      "label": "EMPNAME",
+      "group": "RelationalColumn",
+      "properties": {
+        "vertex--tableDisplayName": "EMPLDIRECTORY",
+        "vertex--schemaTypeDisplayName": "DB2INST1",
+        "vertex--databaseDisplayName": "MINIMAL",
+        "vertex--databaseSchemaDisplayName": "DB2INST1",
+        "vertex--connectionDisplayName": "Minimal_ibm-db2"
+      },
+      "level": 2
+    },
+    {
+      "id": "deb6e284-25ec-41bb-98ad-e7b1d17eaff6",
+      "label": "flow3",
+      "group": "subProcess",
+      "properties": {
+        "displayName": "flow3"
+      },
+      "level": 1
+    },
+    {
+      "id": "d7f650b9-9830-43db-b56b-4c27fd46bffb",
+      "label": "flow1",
+      "group": "subProcess",
+      "properties": {
+        "displayName": "flow1"
+      },
+      "level": -1
+    },
+    {
+      "id": "data_file_field@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8ek.ehni23m.bogor8.o83mdo1g45kbilg5qik6p",
+      "label": "First",
+      "group": "TabularColumn",
+      "properties": {
+        "vertex--tableDisplayName": "names.csv",
+        "vertex--schemaTypeDisplayName": "names",
+        "vertex--path": "//data/files/minimal",
+        "vertex--connectionDisplayName": "LOCALFS"
+      },
+      "level": -2
+    },
+    {
+      "id": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
+      "label": "FNAME",
+      "group": "RelationalColumn",
+      "properties": {
+        "vertex--tableDisplayName": "EMPLNAME",
+        "vertex--schemaTypeDisplayName": "DB2INST1",
+        "vertex--databaseDisplayName": "MINIMAL",
+        "vertex--databaseSchemaDisplayName": "DB2INST1",
+        "vertex--connectionDisplayName": "Minimal_ibm-db2"
+      },
+      "level": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": "data_file_field@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8ek.ehni23m.bogor8.o83mdo1g45kbilg5qik6p",
+      "to": "d7f650b9-9830-43db-b56b-4c27fd46bffb",
+      "label": null
+    },
+    {
+      "from": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
+      "to": "deb6e284-25ec-41bb-98ad-e7b1d17eaff6",
+      "label": null
+    },
+    {
+      "from": "d7f650b9-9830-43db-b56b-4c27fd46bffb",
+      "to": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
+      "label": null
+    },
+    {
+      "from": "deb6e284-25ec-41bb-98ad-e7b1d17eaff6",
+      "to": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8l9.koitp6g.85g5rm.tghfdbgi2ggf1cigmp7ji",
+      "label": null
+    }
+  ]
+}

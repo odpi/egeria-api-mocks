@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "database_table@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.54bd3a08.0v9nac8f0.do41ab1.tek98c.is4atgvlgdvqb57esjk8i",
+      "label": "EMPLNAME",
+      "group": "RelationalTable",
+      "properties": {
+        "updatedBy": "Egeria Open Metadata",
+        "createdBy": "Egeria Open Metadata",
+        "createTime": "Fri Oct 16 05:57:49 CDT 2020",
+        "displayName": "EMPLNAME",
+        "guid": "database_table@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.54bd3a08.0v9nac8f0.do41ab1.tek98c.is4atgvlgdvqb57esjk8i",
+        "updateTime": "Fri Oct 16 05:57:49 CDT 2020"
+      },
+      "level": -1
+    },
+    {
+      "id": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
+      "label": "FNAME",
+      "group": "RelationalColumn",
+      "properties": {
+        "vertex--tableDisplayName": "EMPLNAME",
+        "vertex--schemaTypeDisplayName": "DB2INST1",
+        "vertex--databaseDisplayName": "MINIMAL",
+        "vertex--databaseSchemaDisplayName": "DB2INST1",
+        "vertex--connectionDisplayName": "Minimal_ibm-db2"
+      },
+      "level": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": "database_table@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.54bd3a08.0v9nac8f0.do41ab1.tek98c.is4atgvlgdvqb57esjk8i",
+      "to": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
+      "label": null
+    }
+  ]
+}
