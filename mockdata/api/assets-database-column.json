@@ -1,0 +1,54 @@
+{
+  "guid": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
+  "type": {
+    "name": "RelationalColumn",
+    "description": "A column within a relational table.",
+    "version": 2
+  },
+  "createdBy": "Egeria Open Metadata",
+  "createTime": "2020-10-16T10:57:49.000+00:00",
+  "updatedBy": "Egeria Open Metadata",
+  "updateTime": "2020-10-16T11:26:41.000+00:00",
+  "version": 1602847601000,
+  "status": "Active",
+  "properties": {
+    "nativeClass": "VARCHAR",
+    "minCardinality": "1",
+    "isDeprecated": "false",
+    "minimumLength": "0",
+    "displayName": "FNAME",
+    "qualifiedName": "(host_(engine))=IS115.OPENMETADATA.IBMCLOUD.COM::(database)=MINIMAL::(database_schema)=DB2INST1::(database_table)=EMPLNAME::(database_column)=FNAME",
+    "isNullable": "false",
+    "anchorGUID": "database_schema@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.c1fb060b.0v9nac8f0.do4ohla.lgigrf.8t9ulol7dqfqe0arjo613",
+    "length": "50",
+    "position": "2",
+    "allowsDuplicateValues": "true",
+    "maxCardinality": "1"
+  },
+  "additionalProperties": {
+    "selected_foreign_key": "false",
+    "odbc_type": "VARCHAR",
+    "defined_foreign_key": "false",
+    "selected_natural_key": "false"
+  },
+  "classifications": [
+    {
+      "name": "TypeEmbeddedAttribute",
+      "origin": "The classification is explicitly assigned to the entity",
+      "createdBy": "Egeria Open Metadata",
+      "createTime": "2020-10-16T10:57:49.000+00:00",
+      "updatedBy": "Egeria Open Metadata",
+      "updateTime": "2020-10-16T11:26:41.000+00:00",
+      "version": 1602847601000,
+      "status": "Active",
+      "type": {
+        "name": "TypeEmbeddedAttribute",
+        "description": "Type information embedded within an attribute.",
+        "version": 2
+      },
+      "properties": {
+        "dataType": "STRING"
+      }
+    }
+  ]
+}
