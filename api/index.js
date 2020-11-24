@@ -7,16 +7,18 @@ const assetsDatabaseColumn = require('../mockdata/api/assets-database-column.jso
 const lineageEntitiesDatabaseColumn = require('../mockdata/api/lineage-entities-database-column.json');
 const lineageEntitiesDatabaseColumnVerticalLineage = require('../mockdata/api/lineage-entities-database-column-vertical-lineage.json');
 const lineageEntitiesDatabaseColumnEnd2End = require('../mockdata/api/lineage-entities-database-column-end-2-end.json');
+const lineageEntitiesDatabaseColumnEnd2EndIncludeProcesses = require('../mockdata/api/lineage-entities-database-column-end-2-end-include-processes.json');
 const lineageEntitiesDatabaseColumnUltimateSource = require('../mockdata/api/lineage-entities-database-column-ultimate-source.json');
 const lineageEntitiesDatabaseColumnSourceAndDestination = require('../mockdata/api/lineage-entities-database-column-source-and-destination.json');
+const usersComponents = require('../mockdata/api/users-components.json');
 
-module.exports = function(app) {
-  app.get('/api/js/global', (req, res) => {
+module.exports = function (app) {
+  app.get('/api/public/js/global', (req, res) => {
     res.type('.js');
     res.send('window.MyAppGlobals = { rootPath: \'/\' };');
   });
 
-  app.get('/api/css/theme', (req, res) => {
+  app.get('/api/public/css/theme', (req, res) => {
     let theme = 'default';
 
     res.redirect(`/api/themes/${theme}/css/style.css`);
@@ -37,6 +39,10 @@ module.exports = function(app) {
 
   app.get('/api/users/current', (req, res) => {
     res.json(usersCurrent);
+  });
+
+  app.get('/api/users/components', (req, res) => {
+    res.json(usersComponents);
   });
 
   app.get('/api/assets/types', (req, res) => {
@@ -68,7 +74,14 @@ module.exports = function(app) {
   });
 
   app.get('/api/lineage/entities/database_column:somedata/end2end', (req, res) => {
-    res.json(lineageEntitiesDatabaseColumnEnd2End);
+    let includeProcesses = req.query.includeProcesses;
+
+    if (includeProcesses !== "true") {
+      res.json(lineageEntitiesDatabaseColumnEnd2EndIncludeProcesses);
+    } else {
+      res.json(lineageEntitiesDatabaseColumnEnd2End);
+    }
+
   });
 
   app.get('/api/lineage/entities/database_column:somedata/ultimate-source', (req, res) => {
