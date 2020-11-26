@@ -24,7 +24,7 @@ module.exports = function (app) {
     res.redirect(`/api/themes/${theme}/css/style.css`);
   });
 
-  app.get('/api/src/app/info', (req, res) => {
+  app.get('/api/public/app/info', (req, res) => {
     res.json({
       title: 'Open Metadata Platform'
     });
