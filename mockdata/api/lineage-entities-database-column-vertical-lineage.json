@@ -13,7 +13,7 @@
       "properties": {}
     },
     {
-      "id": "3",
+      "id": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
       "label": "3",
       "group": "TabularColumn",
       "properties": {}
@@ -34,19 +34,19 @@
   "edges": [
     {
       "from": "1",
-      "to": "3"
+      "to": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15"
     },
     {
       "from": "2",
-      "to": "3"
+      "to": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15"
     },
     {
-      "from": "3",
+      "from": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15",
       "to": "4"
     },
     {
       "from": "5",
-      "to": "3"
+      "to": "database_column@bf72f823-825b-4d93-a41b-a60fe23b20ae:b1c497ce.60641b50.0v9nac8f0.do4i3dq.0o7vlg.8a3bft4l5hhhnkbo13n15"
     }
   ]
 }

@@ -13,6 +13,10 @@ const lineageEntitiesDatabaseColumnSourceAndDestination = require('../mockdata/a
 const usersComponents = require('../mockdata/api/users-components.json');
 
 module.exports = function (app) {
+  app.get('/api/ui/settings', (req, res) => {
+    res.json({});
+  });
+
   app.get('/api/public/js/global', (req, res) => {
     res.type('.js');
     res.send('window.MyAppGlobals = { rootPath: \'/\' };');
