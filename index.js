@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
 });
 
 require('./api')(app);
+require('./mockdata/api/data')(app);
 
 app.listen(port, () => {
   console.log(`Example app listening on ${port}`);

@@ -13,6 +13,11 @@ const lineageEntitiesDatabaseColumnSourceAndDestination = require('../mockdata/a
 const usersComponents = require('../mockdata/api/users-components.json');
 
 module.exports = function (app) {
+  app.get('/api/user', (req, res) => {
+    res.status(200);
+    res.send({});
+  });
+
   app.get('/api/ui/settings', (req, res) => {
     res.json({});
   });
@@ -57,42 +62,42 @@ module.exports = function (app) {
     res.json(about);
   });
 
-  app.get('/api/assets/search', (req, res) => {
-    res.json(assetsSearch);
-  });
+  // app.get('/api/assets/search', (req, res) => {
+  //   res.json(assetsSearch);
+  // });
 
   app.get('/api/omas/settings', (req, res) => {
     res.json(omasSettings);
   });
 
-  app.get('/api/assets/database_column:somedata', (req, res) => {
-    res.json(assetsDatabaseColumn);
-  });
+  // app.get('/api/assets/database_column:somedata', (req, res) => {
+  //   res.json(assetsDatabaseColumn);
+  // });
 
-  app.get('/api/lineage/entities/database_column:somedata/ultimate-destination', (req, res) => {
-    res.json(lineageEntitiesDatabaseColumn);
-  });
+  // app.get('/api/lineage/entities/database_column:somedata/ultimate-destination', (req, res) => {
+  //   res.json(lineageEntitiesDatabaseColumn);
+  // });
 
-  app.get('/api/lineage/entities/database_column:somedata/vertical-lineage', (req, res) => {
-    res.json(lineageEntitiesDatabaseColumnVerticalLineage);
-  });
+  // app.get('/api/lineage/entities/database_column:somedata/vertical-lineage', (req, res) => {
+  //   res.json(lineageEntitiesDatabaseColumnVerticalLineage);
+  // });
 
-  app.get('/api/lineage/entities/database_column:somedata/end2end', (req, res) => {
-    let includeProcesses = req.query.includeProcesses;
+  // app.get('/api/lineage/entities/database_column:somedata/end2end', (req, res) => {
+  //   let includeProcesses = req.query.includeProcesses;
 
-    if (includeProcesses !== "true") {
-      res.json(lineageEntitiesDatabaseColumnEnd2EndIncludeProcesses);
-    } else {
-      res.json(lineageEntitiesDatabaseColumnEnd2End);
-    }
+  //   if (includeProcesses !== "true") {
+  //     res.json(lineageEntitiesDatabaseColumnEnd2EndIncludeProcesses);
+  //   } else {
+  //     res.json(lineageEntitiesDatabaseColumnEnd2End);
+  //   }
 
-  });
+  // });
 
-  app.get('/api/lineage/entities/database_column:somedata/ultimate-source', (req, res) => {
-    res.json(lineageEntitiesDatabaseColumnUltimateSource);
-  });
+  // app.get('/api/lineage/entities/database_column:somedata/ultimate-source', (req, res) => {
+  //   res.json(lineageEntitiesDatabaseColumnUltimateSource);
+  // });
 
-  app.get('/api/lineage/entities/database_column:somedata/source-and-destination', (req, res) => {
-    res.json(lineageEntitiesDatabaseColumnSourceAndDestination);
-  })
+  // app.get('/api/lineage/entities/database_column:somedata/source-and-destination', (req, res) => {
+  //   res.json(lineageEntitiesDatabaseColumnSourceAndDestination);
+  // })
 };
