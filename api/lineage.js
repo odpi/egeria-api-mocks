@@ -151,6 +151,13 @@ let simpleData = {
   edges: [edge12]
 };
 
+let emptySimpleData = {
+  nodes: [],
+  edges: []
+};
+
+// simpleData = emptySimpleData;
+
 let dataWithProcesses = {
   nodes: [node1, process12, node2],
   edges: [edge112, edge122]
@@ -177,7 +184,6 @@ const verticalLineage = (includeProcess) => {
 const ultimateDestination = (includeProcesses) => {
   return includeProcesses ? [node1] : [node1];
 }
-
 
 module.exports = function (app) {
   app.get('/api/assets/search', (req, res) => {
