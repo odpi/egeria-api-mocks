@@ -5,6 +5,15 @@ const omasSettings = require('./data/omas-settings.json');
 const usersComponents = require('./data/users-components.json');
 
 module.exports = function (app) {
+  app.get('/about.json', (req, res) => {
+    res.send({
+      name: 'dev',
+      version: 'dev',
+      commitId: 'dev',
+      buildTime: 'dev'
+    });
+  });
+
   app.get('/api/user', (req, res) => {
     res.status(200);
     res.send({});
