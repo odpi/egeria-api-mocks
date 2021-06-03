@@ -2,7 +2,7 @@ const usersCurrent = require('./data/users-current.json');
 const assetsTypes = require('./data/assets-types.json');
 const about = require('./data/about.json');
 const omasSettings = require('./data/omas-settings.json');
-const usersComponents = require('./data/users-components.json');
+const usersRoles = require('./data/users-roles.json');
 
 module.exports = function (app) {
   app.get('/about.json', (req, res) => {
@@ -55,8 +55,8 @@ module.exports = function (app) {
     res.json(usersCurrent);
   });
 
-  app.get('/api/users/components', (req, res) => {
-    res.json(usersComponents);
+  app.get('/api/users/roles', (req, res) => {
+    res.json(usersRoles);
   });
 
   app.get('/api/assets/types', (req, res) => {
