@@ -19,6 +19,10 @@ module.exports = function (app) {
     res.send({});
   });
 
+  app.get('/api/users/components', (req, res) => {
+    res.send(['*']);
+  });
+
   app.get('/api/ui/settings', (req, res) => {
     res.json({});
   });
@@ -45,9 +49,9 @@ module.exports = function (app) {
   });
 
   app.post('/api/auth/login', (req, res) => {
-    // let user_id = req.body.id;
+    const jwt = `eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI4M2NhZWI0YS0wY2YyLTRjOTEtODBlZS0wNjFiM2RiYzlkNjQiLCJzdWIiOiJ7XCJ1c2VybmFtZVwiOlwic2FyYnVsbFwiLFwiZGlzcGxheU5hbWVcIjpcIlNpcmJ1LCBOLkMuIChOaWNvbGFlIC0gQ2V6YXIpXCIsXCJmaXJzdE5hbWVcIjpcIk5pY29sYWUgLSBDZXphclwiLFwibGFzdE5hbWVcIjpcIlNpcmJ1XCIsXCJlbWFpbFwiOlwic2lyYnVuaWNvbGFlY2V6YXJAZ21haWwuY29tXCIsXCJhdmF0YXJVcmxcIjpudWxsLFwicm9sZXNcIjpbXCJST0xFXzFcIixcIlJPTEVfMlwiXSxcInZpc2libGVDb21wb25lbnRzXCI6W1wiYXNzZXQtY2F0YWxvZ1wiLFwidmVydGljYWwtbGluZWFnZVwiLFwiYXNzZXQtbGluZWFnZVwiLFwiYWJvdXRcIixcIipcIl19In0.i88eVipnwG6P5rIpPq3GMNv5n-tbuCujCsoE8KRXmoalx_sTVbyBM4UbCKW08RrxC_CpmylNQTIr1oDCGn42hg`;
 
-    res.set('x-auth-token', '12345');
+    res.set('x-auth-token', jwt);
     res.send();
   });
 
