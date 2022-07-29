@@ -14,6 +14,27 @@ module.exports = function (app) {
     });
   });
 
+  app.get('/api/glossaries', (req, res) => {
+    res.send([{
+      displayName: 'Test',
+      status: 'Active'
+    }]);
+  });
+
+  app.get('/api/glossaries/categories', (req, res) => {
+    res.send([{
+    displayName: 'Another test',
+      status: 'Active'
+    }]);
+  });
+
+  app.get('/api/glossaries/terms', (req, res) => {
+    res.send([{
+      displayName: 'Example',
+      status: 'Active'
+    }]);
+  });
+
   app.get('/api/user', (req, res) => {
     res.status(200);
     res.send({});
