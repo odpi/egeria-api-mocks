@@ -16,18 +16,18 @@ app.use((req, res, next) => {
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-app.use('/api/themes/', express.static('./api/themes/'));
-
 // Add latency in response time to simulate
 // poor internet connection
 app.use(function (req, res, next) {
   setTimeout(() => {
     next()
-  }, 1000);
+  }, 1500);
 });
 
 app.get('/', (req, res) => {
-  res.json({});
+  res.json({
+    app: true
+  });
 });
 
 require('./api')(app);

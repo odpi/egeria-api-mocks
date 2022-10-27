@@ -52,17 +52,6 @@ module.exports = function (app) {
     res.json({});
   });
 
-  app.get('/api/public/js/global', (req, res) => {
-    res.type('.js');
-    res.send('window.MyAppGlobals = { rootPath: \'/\' };');
-  });
-
-  app.get('/api/public/css/theme', (req, res) => {
-    let theme = 'default';
-
-    res.redirect(`/api/themes/${theme}/css/style.css`);
-  });
-
   app.get('/api/public/app/info', (req, res) => {
     res.json({
       title: 'Open Metadata Platform'
@@ -73,6 +62,7 @@ module.exports = function (app) {
     const jwt = `eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI4M2NhZWI0YS0wY2YyLTRjOTEtODBlZS0wNjFiM2RiYzlkNjQiLCJzdWIiOiJ7XCJ1c2VybmFtZVwiOlwic2FyYnVsbFwiLFwiZGlzcGxheU5hbWVcIjpcIlNpcmJ1LCBOLkMuIChOaWNvbGFlIC0gQ2V6YXIpXCIsXCJmaXJzdE5hbWVcIjpcIk5pY29sYWUgLSBDZXphclwiLFwibGFzdE5hbWVcIjpcIlNpcmJ1XCIsXCJlbWFpbFwiOlwic2lyYnVuaWNvbGFlY2V6YXJAZ21haWwuY29tXCIsXCJhdmF0YXJVcmxcIjpudWxsLFwicm9sZXNcIjpbXCJST0xFXzFcIixcIlJPTEVfMlwiXSxcInZpc2libGVDb21wb25lbnRzXCI6W1wiYXNzZXQtY2F0YWxvZ1wiLFwidmVydGljYWwtbGluZWFnZVwiLFwiYXNzZXQtbGluZWFnZVwiLFwiYWJvdXRcIixcIipcIl19In0.i88eVipnwG6P5rIpPq3GMNv5n-tbuCujCsoE8KRXmoalx_sTVbyBM4UbCKW08RrxC_CpmylNQTIr1oDCGn42hg`;
 
     res.set('x-auth-token', jwt);
+
     res.send();
   });
 
