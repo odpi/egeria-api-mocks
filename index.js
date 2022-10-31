@@ -16,18 +16,27 @@ app.use((req, res, next) => {
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-app.use('/api/themes/', express.static('./api/themes/'));
-
 // Add latency in response time to simulate
 // poor internet connection
 app.use(function (req, res, next) {
   setTimeout(() => {
     next()
-  }, 1000);
+  }, 1500);
+});
+
+// Check for presence of token, return 401 if not found
+app.use(function (req, res, next) {
+  if(!req.headers['x-auth-token']) {
+    res.status(401);
+  }
+
+  next();
 });
 
 app.get('/', (req, res) => {
-  res.json({});
+  res.json({
+    app: true
+  });
 });
 
 require('./api')(app);
