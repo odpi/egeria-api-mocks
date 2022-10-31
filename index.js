@@ -24,6 +24,15 @@ app.use(function (req, res, next) {
   }, 1500);
 });
 
+// Check for presence of token, return 401 if not found
+app.use(function (req, res, next) {
+  if(!req.headers['x-auth-token']) {
+    res.status(401);
+  }
+
+  next();
+});
+
 app.get('/', (req, res) => {
   res.json({
     app: true
