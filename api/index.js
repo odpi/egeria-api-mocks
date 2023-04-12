@@ -54,32 +54,14 @@ module.exports = function (app) {
     res.json({});
   });
 
-  app.get('/api/public/app/info', (req, res) => {
-    res.json({
-      title: 'Open Metadata Platform'
-    });
-  });
-
   app.post('/api/token', (req, res) => {
-    const jwt = `eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI1OWUzY2EwMy1hYzFmLTRiODQtOGMxYi1kMWNkODQ2MWI1NDAiLCJzdWIiOiJ7XCJ1c2VybmFtZVwiOlwic2FyYnVsbFwiLFwiZGlzcGxheU5hbWVcIjpcIlNpcmJ1IE5pY29sYWUtQ2V6YXJcIixcImZpcnN0TmFtZVwiOlwiTmljb2xhZSAtIENlemFyXCIsXCJsYXN0TmFtZVwiOlwiU2lyYnVcIixcImVtYWlsXCI6XCJzaXJidW5pY29sYWVjZXphckBnbWFpbC5jb21cIixcImF2YXRhclVybFwiOm51bGwsXCJyb2xlc1wiOltcIlJPTEVfQURNSU5cIixcIlJPTEVfVVNFUlwiXSxcInZpc2libGVDb21wb25lbnRzXCI6W1wiYXNzZXQtY2F0YWxvZ1wiLFwidmVydGljYWwtbGluZWFnZVwiLFwiYXNzZXQtbGluZWFnZVwiLFwiYWJvdXRcIixcImVuZC10by1lbmRcIixcIipcIixcInJlcG9zaXRvcnktZXhwbG9yZXJcIixcImFzc2V0LWxpbmVhZ2UtcHJpbnRcIixcImdsb3NzYXJ5XCIsXCJ1bHRpbWF0ZS1kZXN0aW5hdGlvblwiLFwiYXNzZXQtZGV0YWlsc1wiLFwidWx0aW1hdGUtc291cmNlXCIsXCJ0eXBlLWV4cGxvcmVyXCIsXCJhc3NldC1kZXRhaWxzLXByaW50XCIsXCJsaW5lYWdlLWltcG9ydFwiXX0ifQ.q9DgwVPjQ1nl05szkbZY-z8tcEcX1B0vcaFLFfKK1M3lc6s89kmdBdUSPyazWeXf8OCVMdOOhh9XzoSUqUQGJA`;
+    const jwt = 'eyJraWQiOiI4Y2FkZTQwMC00ZTBkLTQ4ZjktOWU2Mi1kNGNmOGMxZGEyMmQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJzYXJidWxsIiwic2NvcGUiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJpc3MiOiJzZWxmIiwidmlzaWJsZUNvbXBvbmVudHMiOlsiKiIsImFzc2V0LWNhdGFsb2ciLCJ2ZXJ0aWNhbC1saW5lYWdlIiwiYXNzZXQtbGluZWFnZSIsImFib3V0IiwiZW5kLXRvLWVuZCIsInJlcG9zaXRvcnktZXhwbG9yZXIiLCJsaW5lYWdlLWltcG9ydCIsImFzc2V0LWxpbmVhZ2UtcHJpbnQiLCJnbG9zc2FyeSIsInVsdGltYXRlLWRlc3RpbmF0aW9uIiwiYXNzZXQtZGV0YWlscyIsInVsdGltYXRlLXNvdXJjZSIsInR5cGUtZXhwbG9yZXIiLCJhc3NldC1kZXRhaWxzLXByaW50Il0sImV4cCI6MTY4MTMwODIzMiwiaWF0IjoxNjgxMzA0NjMyfQ.Mluh_rebESwVDUFgHjBZLXpImIzmWpVvJGvX5ePCZrvyiABFkAwMKyrNUyagSKjuzKvmtU4ItXG-6FCXpCZ29grIUAoV-W_bLUij7YirBsJW8QtXEprBTqCHdnUQ7fNoOWTR0yvYgnTSzZ5OGtf-UWUokM4P5PUFz9doPNziup3d73Ti1T9EaGZcn1I_rC1oOPE8XKGkFujyUM8MtgUCGjs0awC59vB91Te6GplsYR1YWnrQuoBp1lpjXXUI6VIjw1NKsBfX0ETsAZZtn8SsM6TE_MsajeafJyvQ4F9quEzXEhNOL_tOtJIHnLUvSo6yn69mWdK7vbUFn5NVFX8WxA';
 
     res.send(jwt);
   });
 
-  app.get('/api/users/current', (req, res) => {
-    res.json(usersCurrent);
-  });
-
-  app.get('/api/users/roles', (req, res) => {
-    res.json(usersRoles);
-  });
-
   app.get('/api/assets/types', (req, res) => {
     res.json(assetsTypes);
-  });
-
-  app.get('/api/about', (req, res) => {
-    res.json(about);
   });
 
   app.get('/api/omas/settings', (req, res) => {
