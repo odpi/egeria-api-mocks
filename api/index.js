@@ -58,12 +58,10 @@ module.exports = function (app) {
     });
   });
 
-  app.post('/api/auth/login', (req, res) => {
-    const jwt = `eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI4M2NhZWI0YS0wY2YyLTRjOTEtODBlZS0wNjFiM2RiYzlkNjQiLCJzdWIiOiJ7XCJ1c2VybmFtZVwiOlwic2FyYnVsbFwiLFwiZGlzcGxheU5hbWVcIjpcIlNpcmJ1LCBOLkMuIChOaWNvbGFlIC0gQ2V6YXIpXCIsXCJmaXJzdE5hbWVcIjpcIk5pY29sYWUgLSBDZXphclwiLFwibGFzdE5hbWVcIjpcIlNpcmJ1XCIsXCJlbWFpbFwiOlwic2lyYnVuaWNvbGFlY2V6YXJAZ21haWwuY29tXCIsXCJhdmF0YXJVcmxcIjpudWxsLFwicm9sZXNcIjpbXCJST0xFXzFcIixcIlJPTEVfMlwiXSxcInZpc2libGVDb21wb25lbnRzXCI6W1wiYXNzZXQtY2F0YWxvZ1wiLFwidmVydGljYWwtbGluZWFnZVwiLFwiYXNzZXQtbGluZWFnZVwiLFwiYWJvdXRcIixcIipcIl19In0.i88eVipnwG6P5rIpPq3GMNv5n-tbuCujCsoE8KRXmoalx_sTVbyBM4UbCKW08RrxC_CpmylNQTIr1oDCGn42hg`;
+  app.post('/api/token', (req, res) => {
+    const jwt = `eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI1OWUzY2EwMy1hYzFmLTRiODQtOGMxYi1kMWNkODQ2MWI1NDAiLCJzdWIiOiJ7XCJ1c2VybmFtZVwiOlwic2FyYnVsbFwiLFwiZGlzcGxheU5hbWVcIjpcIlNpcmJ1IE5pY29sYWUtQ2V6YXJcIixcImZpcnN0TmFtZVwiOlwiTmljb2xhZSAtIENlemFyXCIsXCJsYXN0TmFtZVwiOlwiU2lyYnVcIixcImVtYWlsXCI6XCJzaXJidW5pY29sYWVjZXphckBnbWFpbC5jb21cIixcImF2YXRhclVybFwiOm51bGwsXCJyb2xlc1wiOltcIlJPTEVfQURNSU5cIixcIlJPTEVfVVNFUlwiXSxcInZpc2libGVDb21wb25lbnRzXCI6W1wiYXNzZXQtY2F0YWxvZ1wiLFwidmVydGljYWwtbGluZWFnZVwiLFwiYXNzZXQtbGluZWFnZVwiLFwiYWJvdXRcIixcImVuZC10by1lbmRcIixcIipcIixcInJlcG9zaXRvcnktZXhwbG9yZXJcIixcImFzc2V0LWxpbmVhZ2UtcHJpbnRcIixcImdsb3NzYXJ5XCIsXCJ1bHRpbWF0ZS1kZXN0aW5hdGlvblwiLFwiYXNzZXQtZGV0YWlsc1wiLFwidWx0aW1hdGUtc291cmNlXCIsXCJ0eXBlLWV4cGxvcmVyXCIsXCJhc3NldC1kZXRhaWxzLXByaW50XCIsXCJsaW5lYWdlLWltcG9ydFwiXX0ifQ.q9DgwVPjQ1nl05szkbZY-z8tcEcX1B0vcaFLFfKK1M3lc6s89kmdBdUSPyazWeXf8OCVMdOOhh9XzoSUqUQGJA`;
 
-    res.set('x-auth-token', jwt);
-
-    res.send();
+    res.send(jwt);
   });
 
   app.get('/api/users/current', (req, res) => {
