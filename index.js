@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
 
 // Check for presence of token, return 401 if not found
 app.use(function (req, res, next) {
-  if(`${req.baseUrl}${req.path}` !== '/api/token' && !req.headers.authorization) {
+  if(!['/api/token', '/about.json'].includes(req.path) && !req.headers.authorization) {
     res.status(401);
   }
 
