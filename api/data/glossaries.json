@@ -1,0 +1,27 @@
+[
+    {
+        "typeDefName": "Glossary",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "6ee074b0-8fca-450c-981b-bb178b14640d",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "CanonicalVocabulary",
+                "classificationType": "CanonicalVocabulary",
+                "createdBy": "The Cloud Information Model",
+                "createTime": "2019-10-06T17:36:25.107+00:00",
+                "status": "Active",
+                "properties": {
+                    "scope": "People, organizations, accounts and contact details, orders and payments."
+                }
+            }
+        ],
+        "usage": "Data types for commerce focused cloud applications.",
+        "description": "The Cloud Information Model (CIM) is an open source glossary and data model that spans the following subject areas:\n\n•\tParty – people, their roles and organizations.\n•\tProduct – product descriptions, structures and packaging.\n•\tSales Order – customer orders for goods and services.\n•\tPayment Method – payment methods including cards, coupons and digital wallets.\n•\tPayment – individual payments for goods and services.\n•\tShipment – shipment of goods and services to the customer to fulfil an order.\n\nThis means it can provide common data structures for new services spanning customer and employee interaction around typical commercial activities such as buying and selling of goods and services.\n\nThe motivation behind the cloud information model is to support organizations who are transforming their digital services to run on a variety of cloud platforms and with their own data centres.  Often, they are dealing with systems built on many different generations of technology, with data distributed amongst them.  The CIM provides a common language to describe the different types of data.\n\nThe CIM has been created to simplify the growing complexity companies experience when integrating data across different systemsin order to deliver highly intelligent and personalized customer engagements. It standardizes data interoperability by creating a set of guidelines to easily connect systems such as a point of sale system, email marketing platform, customer service center, customer relationship management (CRM) system and more. Developers will no longer need to spend months creating custom code in order to deliver innovative customer experiences. The CIM can be easily adopted and extended within days so that developers can focus on creating new innovations faster that deliver a truly connected, personalized and intelligent customer experience. \n",
+        "displayName": "Cloud Information Model (CIM)",
+        "language": "En_US",
+        "qualifiedName": "Glossary-CloudInformationModel"
+    }
+]
