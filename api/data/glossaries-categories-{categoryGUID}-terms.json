@@ -1,0 +1,163 @@
+[
+    {
+        "typeDefName": "GlossaryTerm",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "b1f83e6d-a5bb-4678-bfe1-45a2e353dd58",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "Anchors",
+                "classificationType": "Anchors",
+                "createdBy": "OMAGServer",
+                "createTime": "2022-12-22T09:48:45.617+00:00",
+                "status": "Active",
+                "properties": {
+                    "anchorGUID": "6ee074b0-8fca-450c-981b-bb178b14640d"
+                }
+            }
+        ],
+        "description": "Can customers be offered product at a discounted price",
+        "displayName": "Is Customer Discount Allowed",
+        "qualifiedName": "SalesDiscountPropertyGroup-isCustomerDiscountAllowed"
+    },
+    {
+        "typeDefName": "GlossaryTerm",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "c350eda7-70b7-4edd-b4f2-cff5632ff17a",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "Anchors",
+                "classificationType": "Anchors",
+                "createdBy": "OMAGServer",
+                "createTime": "2022-12-22T09:54:45.417+00:00",
+                "status": "Active",
+                "properties": {
+                    "anchorGUID": "6ee074b0-8fca-450c-981b-bb178b14640d"
+                }
+            }
+        ],
+        "description": "How many points given for the purchase of this item",
+        "displayName": "Reward Program Points Count",
+        "qualifiedName": "SalesDiscountPropertyGroup-rewardProgramPointsCount"
+    },
+    {
+        "typeDefName": "GlossaryTerm",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "100b7a19-70ff-4a9e-8a42-6db6a2a35bdf",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "Anchors",
+                "classificationType": "Anchors",
+                "createdBy": "OMAGServer",
+                "createTime": "2022-12-22T09:54:45.437+00:00",
+                "status": "Active",
+                "properties": {
+                    "anchorGUID": "6ee074b0-8fca-450c-981b-bb178b14640d"
+                }
+            }
+        ],
+        "description": "Can employees and contractor get a discount on this product",
+        "displayName": "Is Worker Discount Allowed",
+        "qualifiedName": "SalesDiscountPropertyGroup-isWorkerDiscountAllowed"
+    },
+    {
+        "typeDefName": "GlossaryTerm",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "aa8fb84d-64d8-4494-8ce8-689bf265d73a",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "Anchors",
+                "classificationType": "Anchors",
+                "createdBy": "OMAGServer",
+                "createTime": "2022-12-22T09:54:45.458+00:00",
+                "status": "Active",
+                "properties": {
+                    "anchorGUID": "6ee074b0-8fca-450c-981b-bb178b14640d"
+                }
+            }
+        ],
+        "description": "Can seller and supplier partners get a discount on this product",
+        "displayName": "Is Partner Discount Allowed",
+        "qualifiedName": "SalesDiscountPropertyGroup-isPartnerDiscountAllowed"
+    },
+    {
+        "typeDefName": "GlossaryTerm",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "569145b9-3d6a-4b4c-b6aa-b573d8fc2b44",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "Anchors",
+                "classificationType": "Anchors",
+                "createdBy": "OMAGServer",
+                "createTime": "2022-12-22T09:54:45.478+00:00",
+                "status": "Active",
+                "properties": {
+                    "anchorGUID": "6ee074b0-8fca-450c-981b-bb178b14640d"
+                }
+            }
+        ],
+        "description": "Can multiple coupons be applied to the same item",
+        "displayName": "Is Multiple Coupons Allowed",
+        "qualifiedName": "SalesDiscountPropertyGroup-isMultipleCouponsAllowed"
+    },
+    {
+        "typeDefName": "GlossaryTerm",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "a3a6d46f-c21b-4b39-b61d-ee2b2cf81bb4",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "Anchors",
+                "classificationType": "Anchors",
+                "createdBy": "OMAGServer",
+                "createTime": "2022-12-22T09:54:45.499+00:00",
+                "status": "Active",
+                "properties": {
+                    "anchorGUID": "6ee074b0-8fca-450c-981b-bb178b14640d"
+                }
+            }
+        ],
+        "description": "Can this product be paid with food stamps",
+        "displayName": "Is Foodstamp Payment Allowed",
+        "qualifiedName": "SalesDiscountPropertyGroup-isFoodstampPaymentAllowed"
+    },
+    {
+        "typeDefName": "GlossaryTerm",
+        "createdBy": "The Cloud Information Model",
+        "createTime": "2019-10-06T17:36:25.107+00:00",
+        "version": 1,
+        "guid": "fa719f08-6631-4a3c-9a9c-2d34d47fd8ca",
+        "status": "Active",
+        "classifications": [
+            {
+                "name": "Anchors",
+                "classificationType": "Anchors",
+                "createdBy": "OMAGServer",
+                "createTime": "2022-12-22T09:54:45.519+00:00",
+                "status": "Active",
+                "properties": {
+                    "anchorGUID": "6ee074b0-8fca-450c-981b-bb178b14640d"
+                }
+            }
+        ],
+        "description": "Can a coupon be used to redeem this item",
+        "displayName": "Is Coupon Redemption Allowed",
+        "qualifiedName": "SalesDiscountPropertyGroup-isCouponRedemptionAllowed"
+    }
+]
