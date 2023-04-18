@@ -3,6 +3,9 @@ const assetsTypes = require('./data/assets-types.json');
 const about = require('./data/about.json');
 const omasSettings = require('./data/omas-settings.json');
 const usersRoles = require('./data/users-roles.json');
+const glossaries = require('./data/glossaries.json');
+const glossaryCategories = require('./data/glossaries-{glossaryGUID}-categories.json');
+const glossaryTerms = require('./data/glossaries-categories-{categoryGUID}-terms.json');
 
 module.exports = function (app) {
   app.get('/about.json', (req, res) => {
@@ -15,25 +18,24 @@ module.exports = function (app) {
   });
 
   app.get('/api/glossaries', (req, res) => {
-    res.send([{
-      displayName: 'Test',
-      status: 'Active'
-    }]);
+    res.json(glossaries);
   });
 
-  app.get('/api/glossaries/categories', (req, res) => {
-    res.send([{
-    displayName: 'Another test',
-      status: 'Active'
-    }]);
+  app.get('/api/glossaries/:guid/categories', (req, res) => {
+    res.json(glossaryCategories);
   });
 
-  app.get('/api/glossaries/terms', (req, res) => {
-    res.send([{
-      displayName: 'Example',
-      status: 'Active'
-    }]);
+//   app.get('/api/glossaries/categories', (req, res) => {
+//     res.json(glossaryCategories);
+//   });
+
+  app.get('/api/glossaries/categories/:guid/terms', (req, res) => {
+    res.json(glossaryTerms);
   });
+
+//   app.get('/api/glossaries/categories/terms', (req, res) => {
+//     res.json(glossaryTerms);
+//   });
 
   app.get('/api/user', (req, res) => {
     res.status(200);
