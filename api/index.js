@@ -33,23 +33,6 @@ module.exports = function (app) {
     res.json(glossaryTerms);
   });
 
-//   app.get('/api/glossaries/categories/terms', (req, res) => {
-//     res.json(glossaryTerms);
-//   });
-
-  app.get('/api/user', (req, res) => {
-    res.status(200);
-    res.send({});
-  });
-
-  app.get('/api/users/components', (req, res) => {
-    res.send(['*']);
-  });
-
-  app.get('/api/ui/settings', (req, res) => {
-    res.json({});
-  });
-
   app.get('/api/logout', (req, res) => {
     res.json({});
   });
